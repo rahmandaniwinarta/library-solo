@@ -11,10 +11,10 @@ export const userSlice = createSlice({
   initialState,
   reducers: {
     login: (state, action) => {
-      state.value.NIM = action.payload.NIM;
+      state.value.NIM = action.payload.NIM; //reasign value yg diatas
     },
     logout: (state) => {
-      state.value.NIM = 0;
+      state.value.NIM = null;
     },
   },
 });

@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { login, logout } from "../redux/userSlice";
+import { login } from "../redux/userSlice";
 
 import Axios from "axios";
 import { useNavigate } from "react-router-dom";
@@ -55,10 +55,10 @@ export const LoginPage = () => {
     }
   };
 
-  const onLogout = async () => {
-    dispatch(logout());
-    localStorage.removeItem("token");
-  };
+  // const onLogout = async () => {
+  //   dispatch(logout());
+  //   localStorage.removeItem("token");
+  // };
 
   return (
     <Box
