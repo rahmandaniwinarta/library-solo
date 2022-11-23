@@ -72,7 +72,7 @@ module.exports = {
   },
   keepLogin: async (req, res) => {
     try {
-      console.log(req.user);
+      // console.log(req.user);
       const isUserExist = await db.User.findOne({
         where: {
           NIM: req.user.NIM,
